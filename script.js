@@ -223,7 +223,7 @@ window.onload = () => {
                 //Comprueba por arriba || comprueba por abajo || comprueba de frente
                 if ((seedYandH > player.y && seed.y < player.y) || (seed.y < playerYandH && seedYandH > playerYandH) ||
                     (player.y < seed.y && playerYandH > seedYandH)) {
-                    gameOver = true;
+                    gameOver = false;
                     gameStarted = false
                     buttonStartToReload()
                     backgroundAudio.pause()
